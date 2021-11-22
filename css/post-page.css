@@ -1,0 +1,163 @@
+@charset "UTF-8";
+#section-post {
+  padding: 30px 0 90px; }
+  #section-post .wrapper {
+    max-width: 875px;
+    width: 100%; }
+  #section-post .img {
+    width: 100%;
+    margin-bottom: 30px; }
+    #section-post .img img {
+      display: block;
+      width: 100%; }
+  #section-post .title {
+    margin-bottom: 20px; }
+  #section-post .description {
+    line-height: 25px;
+    margin-bottom: 40px; }
+  #section-post .list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 40px; }
+    #section-post .list li:before {
+      content: '—';
+      margin-right: 5px; }
+    #section-post .list li:not(:last-child) {
+      margin-bottom: 15px; }
+  #section-post .author {
+    font-style: italic; }
+  #section-post h4.title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px; }
+  #section-post .slider-wrapper {
+    position: relative;
+    margin-bottom: 20px; }
+    #section-post .slider-wrapper .arrows {
+      width: 100%;
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      top: 0;
+      height: 100%;
+      z-index: 0; }
+      #section-post .slider-wrapper .arrows .next {
+        margin-right: -125px; }
+      #section-post .slider-wrapper .arrows .prev {
+        margin-left: -125px; }
+  #section-post .post-slider {
+    z-index: 10; }
+    #section-post .post-slider .slick-dots {
+      bottom: 10px; }
+      #section-post .post-slider .slick-dots li {
+        background: #ffffff;
+        opacity: .5; }
+        #section-post .post-slider .slick-dots li button {
+          display: none; }
+      #section-post .post-slider .slick-dots li.slick-active {
+        background: #ffffff;
+        opacity: 1; }
+  #section-post .post-slide {
+    height: 470px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+
+#section-articles {
+  padding-bottom: 35px; }
+  #section-articles .wrapper {
+    max-width: 1100px;
+    width: 100%; }
+    #section-articles .wrapper .wrap {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 35px; }
+  #section-articles .head {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px; }
+  #section-articles .all-articles {
+    font-size: 18px;
+    line-height: 25px;
+    color: #146957;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    #section-articles .all-articles:hover {
+      text-decoration: none;
+      color: #1D1D1D; }
+
+@media (max-width: 1199px) {
+  header.header-post nav {
+    grid-column-gap: 40px; }
+  #section-post .slider-wrapper .arrows {
+    display: none; } }
+
+@media (max-width: 991px) {
+  #section-post .post-slide {
+    height: 420px; } }
+
+@media (max-width: 767px) {
+  #section-post {
+    padding-bottom: 40px;
+    padding-top: 0; }
+    #section-post .img {
+      margin-bottom: 20px; }
+    #section-post .title {
+      margin-bottom: 10px; }
+    #section-post .description {
+      line-height: 20px;
+      margin-bottom: 20px; }
+    #section-post h4.title {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px; }
+    #section-post .post-slide {
+      height: 350px; }
+    #section-post .list {
+      margin-bottom: 25px; }
+      #section-post .list li:not(:last-child) {
+        margin-bottom: 10px; }
+  #section-articles {
+    padding-bottom: 0; }
+    #section-articles .all-articles {
+      font-size: 14px;
+      line-height: 20px; }
+    #section-articles .head {
+      margin-bottom: 10px; }
+    #section-articles .wrapper .wrap {
+      grid-gap: 10px; } }
+
+@media (max-width: 575px) {
+  #section-post .post-slide {
+    height: 320px; }
+  #section-post .post-slider .slick-dots {
+    bottom: 5px; }
+    #section-post .post-slider .slick-dots li {
+      width: 40px;
+      height: 3px; }
+  #section-articles .all-articles {
+    display: none; }
+  #section-articles .wrapper .wrap {
+    display: block; } }
+
+@media (max-width: 370px) {
+  #section-post .post-slide {
+    height: 160px; } }
